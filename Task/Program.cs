@@ -2,6 +2,7 @@
 string[] array2 = new string[array1.Length];
 
 SecondArrayWithIF(array1, array2);
+PrintArray(array2);
 
 void SecondArrayWithIF(string[] array1, string[] array2)
 {
@@ -16,3 +17,12 @@ void SecondArrayWithIF(string[] array1, string[] array2)
     }
 }
 Console.WriteLine("Числа <=3: ");
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
